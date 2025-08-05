@@ -1,197 +1,1060 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Yasin Asadi - Academic Profile</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 15px;
-    line-height: 1.6;
-    background: #f9f9f9;
-    color: #222;
-  }
-  h1, h2 {
-    color: #00539C;
-  }
-  a {
-    color: #00539C;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  section {
-    margin-bottom: 40px;
-    background: white;
-    padding: 20px 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #ccc;
-  }
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  button.show-more {
-    background-color: #00539C;
-    color: white;
-    border: none;
-    padding: 5px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 8px;
-  }
-  button.show-more:hover {
-    background-color: #003d66;
-  }
-  footer {
-    text-align: center;
-    margin: 60px 0 30px;
-    font-size: 0.9em;
-    color: #666;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yasin Asadi • ML Engineer • Researcher • Educator</title>
+  <!-- SEO & Social Media Meta Tags -->
+  <meta name="description" content="Yasin Asadi - Ph.D. Applicant | Machine Learning Engineer | Data Scientist | Researcher | Peer Reviewer">
+  <meta name="keywords" content="Yasin Asadi, Machine Learning, Data Science, AI, PhD, Researcher, Peer Reviewer, ORCID, IEEE, ACM">
+  <meta name="author" content="Yasin Asadi">
+  <meta property="og:title" content="Yasin Asadi | ML Engineer • Researcher • Educator">
+  <meta property="og:description" content="Ph.D. Applicant | Machine Learning Engineer | Data Scientist | Researcher | Peer Reviewer">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://yasin-asadi-data-ml.github.io">
+  <meta property="og:image" content="https://yasin-asadi-data-ml.github.io/images/profile.jpg">
+  <meta name="theme-color" content="#2c3e50">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #34495e;
+      --accent: #3498db;
+      --light: #ecf0f1;
+      --gray: #95a5a6;
+      --success: #27ae60;
+      --danger: #e74c3c;
+      --border: #bdc3c7;
+      --shadow: rgba(0,0,0,0.1);
+      --radius: 10px;
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: #2d3748;
+      line-height: 1.7;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px var(--shadow);
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(120deg, #1a2980 0%, #26d0ce 50%, #1a2980 100%);
+      color: white;
+      padding: 50px 30px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      position: relative;
+      display: inline-block;
+    }
+    header p.title {
+      font-size: 1.25rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      font-size: 0.95rem;
+    }
+    .contact-links a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .contact-links a:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+    .contact-links a img {
+      height: 18px;
+      vertical-align: middle;
+    }
+    section {
+      padding: 35px;
+      border-bottom: 1px solid #eee;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      font-size: 1.7rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    h2 i {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background: var(--accent);
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h3 {
+      font-size: 1.3rem;
+      color: var(--secondary);
+      margin: 20px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h3 i {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background: var(--accent);
+      border-radius: 50%;
+      padding: 6px;
+      font-size: 0.8rem;
+    }
+    p {
+      margin-bottom: 14px;
+    }
+    ul {
+      margin-left: 22px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .institution {
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+    .iau     { background: #e3f2fd; color: #1565c0; }
+    .uast    { background: #f3e5f5; color: #7b1fa2; }
+    .mft     { background: #e8f5e8; color: #2e7d32; }
+    .i2or    { background: #fff3e0; color: #ef6c00; }
+    .water   { background: #bbdefb; color: #0d47a1; }
+    .power   { background: #ffecb3; color: #ff8f00; }
+    .project-desc {
+      font-style: italic;
+      color: #555;
+      margin-left: 30px;
+      margin-top: 4px;
+      font-size: 0.95rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .skill-category {
+      background: #f9fafa;
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 1px solid #e0e0e0;
+      transition: var(--transition);
+      transform: translateY(0);
+    }
+    .skill-category:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      border-color: var(--accent);
+    }
+    .skill-category h4 {
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .cert-group {
+      margin-bottom: 22px;
+    }
+    .accordion-list li {
+      display: none;
+    }
+    .accordion-list.expanded li,
+    .accordion-list li:nth-child(-n+5) {
+      display: list-item;
+    }
+    .btn-toggle {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.2s;
+    }
+    .btn-toggle:hover {
+      background: #2980b9;
+    }
+    .publication {
+      margin-bottom: 14px;
+      padding-left: 8px;
+      border-left: 3px solid var(--accent);
+    }
+    .publication em {
+      color: #555;
+    }
+    .tag {
+      display: inline-block;
+      background: #e0e0e0;
+      color: #555;
+      font-size: 0.75rem;
+      padding: 3px 7px;
+      border-radius: 5px;
+      margin-left: 8px;
+      font-weight: 500;
+    }
+    .tag.journal { background: #e8f5e8; color: #2e7d32; }
+    .tag.conf { background: #e3f2fd; color: #1565c0; }
+    .tag.thesis { background: #fff3e0; color: #ef6c00; }
+    .tag.review { background: #f3e5f5; color: #7b1fa2; }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      margin-right: 8px;
+      font-size: 1.4em;
+    }
+    .logo img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    .review-orgs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 16px;
+      padding: 12px 0 4px;
+      max-width: 800px;
+    }
+    .org-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+    .org-logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border: 2px solid white;
+    }
+    .org-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .org-info {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .org-badge {
+      padding: 14px 22px;
+      border-radius: 16px;
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: white;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      min-width: 180px;
+      text-align: center;
+      border: none;
+    }
+    .org-badge:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.22);
+      z-index: 1;
+    }
+    .elsevier { 
+      background: #e65151; 
+    }
+    .elsevier:hover {
+      background: #d63838;
+    }
+    .springer { 
+      background: #4da6ff; 
+    }
+    .springer:hover {
+      background: #1478c8;
+    }
+    .ieee { 
+      background: #4d8fda; 
+    }
+    .ieee:hover {
+      background: #1b6ca8;
+    }
+    .acm { 
+      background: #333333; 
+    }
+    .acm:hover {
+      background: #111111;
+    }
+    .wiley { 
+      background: #4d8fd9; 
+    }
+    .wiley:hover {
+      background: #105dab;
+    }
+    .taylor { 
+      background: #5d95d1; 
+    }
+    .taylor:hover {
+      background: #2f6fae;
+    }
+    .igiglobal { 
+      background: #3daa7a; 
+    }
+    .igiglobal:hover {
+      background: #00834e;
+    }
+    .mendeley { 
+      background: #e65151; 
+    }
+    .mendeley:hover {
+      background: #d63838;
+    }
+    .csta { 
+      background: #8e7cc3; 
+    }
+    .csta:hover {
+      background: #5a189a;
+    }
+    .iaeng { 
+      background: #4d95f0; 
+    }
+    .iaeng:hover {
+      background: #2575d0;
+    }
+    .nspe { 
+      background: #d17bb8; 
+    }
+    .nspe:hover {
+      background: #8c2fa5;
+    }
+    .membership-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .text-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .text-content p {
+      margin-bottom: 4px;
+    }
+    .institution-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: white;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+    .iaeng-badge { 
+      background: #2575d0; 
+    }
+    .nspe-badge { 
+      background: #8c2fa5; 
+    }
+    .csta-badge { 
+      background: #5a189a; 
+    }
+    .institution-badge:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .icon-only {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border: 2px solid white;
+    }
+    .icon-only i {
+      font-size: 30px;
+      color: var(--accent);
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+    }
+    .contact-item i,
+    .contact-item .iconify {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      font-size: 1.2em;
+    }
+    .contact-item a {
+      color: #2c3e50;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-item a:hover {
+      color: #3498db;
+    }
+    .contact-item img {
+      height: 20px;
+      margin-right: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: var(--gray);
+      font-size: 0.9rem;
+      background: #f8f9fa;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.4rem; }
+      section { padding: 28px 20px; }
+      .contact-links { flex-direction: column; align-items: center; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .review-orgs {
+        gap: 12px;
+        margin-top: 12px;
+      }
+      .org-logo, .icon-only {
+        width: 52px;
+        height: 52px;
+      }
+      .org-badge {
+        min-width: 160px;
+        padding: 12px 18px;
+        font-size: 0.98rem;
+      }
+      h2 i { 
+        width: 36px; 
+        height: 36px; 
+        padding: 8px;
+      }
+      h3 i { 
+        width: 24px; 
+        height: 24px;
+        padding: 5px;
+      }
+      .membership-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .text-content {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<h1>Yasin Asadi</h1>
-
-<section>
-  <h2>Biography</h2>
-  <p>
-    Yasin Asadi is a Computer Engineer, researcher, reviewer, and lecturer specializing in Machine Learning, Data Science, Artificial Intelligence, and Network Engineering.
-    He holds a Master of Science in Computer Architecture System Design and a Bachelor of Science in Computer Engineering.
-  </p>
-  <p>
-    Currently, he teaches advanced topics at various universities, inspiring the next generation in these fields.
-    With extensive experience in peer review for journals such as IEEE, Elsevier, IGI Global, Taylor & Francis, and Springer Nature,
-    he is committed to advancing knowledge and innovation.
-  </p>
-  <p>
-    His research focuses on connecting computer engineering and artificial intelligence across disciplines, with significant contributions to machine learning,
-    data science, and network engineering.
-    Dedicated to advancing technology and education, he makes impactful contributions in applied sciences.
-  </p>
-</section>
-
-<section>
-  <h2>Activities</h2>
-
-  <h3>Employment</h3>
-  <ul>
-    <li><strong>University of Applied Science and Technology, Tehran, IR</strong> (2024–present) — Lecturer (Computer Engineering)</li>
-    <li><strong>Islamic Azad University Central Tehran Branch, Tehran, IR</strong> (2021–present) — Lecturer (Computer Engineering)</li>
-  </ul>
-
-  <h3>Education and Qualifications</h3>
-  <ul>
-    <li><strong>Islamic Azad University, Central Tehran Branch, Tehran, IR</strong><br>
-        Master of Science (Computer Architecture System Design), 2015–2018</li>
-    <li><strong>Qazvin Islamic Azad University, Qazvin, IR</strong><br>
-        Bachelor of Science (Computer Engineering), 2010–2015</li>
-  </ul>
-
-  <h3>Professional Activities</h3>
-  <ul class="show-limited" data-limit="5">
-    <li>Member, International Association of Engineers, Hong Kong (2023–present)</li>
-    <li>Mendeley Advisor, Mendeley Inc., New York, NY, US (2022–present)</li>
-    <li>Honorary County Ambassador (Information Technology), International Institute of Organized Research - I2OR, Punjab, IN (2022–present)</li>
-    <li>CS Professional Member, IEEE Computer Society, New York, US (2022–present)</li>
-    <li>Member, IEEE Council on Superconductivity (2022–present)</li>
-    <li>Member, IEEE Council on Electronic Design Automation (2022–present)</li>
-    <li>Member, IEEE Systems Council (2022–present)</li>
-    <li>Member, IEEE Nanotechnology Council (2022–present)</li>
-    <li>Member, IEEE Council on RFID (2022–present)</li>
-    <li>Member, IEEE Sensors Council (2022–present)</li>
-    <li>Member, IEEE Biometrics Council (2022–present)</li>
-    <li>Member, IEEE Computer Society Technical Community on Computer Architecture (2022–present)</li>
-    <li>Member, Internet Society, Reston, VA, US (2020–present)</li>
-    <li>Member, Computer Science Teachers Association, New York, US (2020–present)</li>
-    <li>Professional Member, Association for Computing Machinery (ACM), New York, NY, US (2020–present)</li>
-    <li>Researcher, Young Researchers and Elite Club Tehran, Tehran, IR (2015–present)</li>
-    <li>Delegate, Translator, Scientific Advisor, Khayyam Invention Festival, Isfahan, IR (2019–2020)</li>
-  </ul>
-
-  <h3>Funding</h3>
-  <ul>
-    <li>Best Reviewer of The Year 2023, Journal of Electrical Engineering & Technology, Seoul, KR</li>
-    <li>Top Graduate Award, Islamic Azad University Central Tehran Branch</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Selected Works</h2>
-  <ul class="show-limited" data-limit="5">
-    <li><strong>Optical network-on-chip (ONoC) architectures:</strong> A detailed analysis of optical router designs, Journal of Semiconductors, 2025. DOI: <a href="https://doi.org/10.1088/1674-4926/24060006" target="_blank" rel="noopener noreferrer">10.1088/1674-4926/24060006</a></li>
-    <li><strong>Employing machine learning in water infrastructure management:</strong> Predicting pipeline failures for improved maintenance and sustainable operations, Industrial Artificial Intelligence, 2024. DOI: <a href="https://doi.org/10.1007/s44244-024-00022-w" target="_blank" rel="noopener noreferrer">10.1007/s44244-024-00022-w</a></li>
-    <li><strong>A comprehensive study and holistic review of empowering network-on-chip application mapping through machine learning techniques,</strong> Discover Electronics, 2024. DOI: <a href="https://doi.org/10.1007/s44291-024-00027-w" target="_blank" rel="noopener noreferrer">10.1007/s44291-024-00027-w</a></li>
-    <li><strong>The Art of Managing Complexity:</strong> A Book Review of Digital Design and Computer Architecture RISC-V Edition, 2022. DOI: <a href="https://doi.org/10.22541/au.165160292.29700471/v1" target="_blank" rel="noopener noreferrer">10.22541/au.165160292.29700471/v1</a></li>
-    <li><strong>An overview of the types of network operating systems,</strong> 14th International Conference on Information Technology, Computer and Telecommunication, 2022</li>
-    <li><strong>Mind-Shift:</strong> A Method for Power and Energy Reduction in Application Mapping onto Network-on-Chip Architectures, Research Square, 2021. DOI: <a href="https://doi.org/10.21203/rs.3.rs-841863/v1" target="_blank" rel="noopener noreferrer">10.21203/rs.3.rs-841863/v1</a></li>
-    <li><strong>A Novel Approach in Application Mapping for Two Dimensional Wireless Network-On-Chip (WiNoC) in Power Reduction,</strong> Islamic Azad University Central Tehran Branch, 2018</li>
-    <li><strong>Introduction of AI,</strong> IAU seminar, 2015. DOI: <a href="https://doi.org/10.13140/RG.2.2.35618.50882" target="_blank" rel="noopener noreferrer">10.13140/RG.2.2.35618.50882</a></li>
-  </ul>
-</section>
-
-<section>
-  <h2>Peer Review Activity (Selected Journals)</h2>
-  <ul>
-    <li>ACM Transactions on Design Automation of Electronic Systems</li>
-    <li>Ad hoc Networks</li>
-    <li>Applied Network Science</li>
-    <li>Artificial Intelligence Review</li>
-    <li>Circuits, Systems, and Signal Processing</li>
-    <li>Computer Communications</li>
-    <li>Computer Networks</li>
-    <li>Computers & Electrical Engineering</li>
-    <li>Construction Robotics</li>
-    <li>Digital Communications and Networks</li>
-    <li>Engineering Applications of Artificial Intelligence</li>
-    <li>EURASIP Journal on Wireless Communications and Networking</li>
-    <li>IEEE Signal Processing Letters</li>
-    <li>International Journal of Wireless Networks and Broadband Technologies</li>
-    <li>Internet of Things</li>
-    <li>Journal of Electrical Engineering & Technology</li>
-    <li>Journal of King Saud University</li>
-    <li>Journal of Systems Architecture</li>
-    <li>Microprocessors and Microsystems</li>
-    <li>Soft Computing</li>
-    <li>The Journal of Supercomputing</li>
-    <li>Vehicular Communications</li>
-  </ul>
-</section>
-
-<footer>
-  <p>© 2025 Yasin Asadi | Designed for academic and professional profile</p>
-</footer>
-
-<script>
-  // Show limited list with "Show More" button for ul.show-limited
-  document.querySelectorAll('ul.show-limited').forEach(ul => {
-    const limit = parseInt(ul.getAttribute('data-limit'), 10) || 5;
-    const items = ul.querySelectorAll('li');
-    if (items.length > limit) {
-      // Hide items after limit
-      for (let i = limit; i < items.length; i++) {
-        items[i].style.display = 'none';
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Yasin Asadi</h1>
+      <p class="title">Ph.D. Applicant | Machine Learning Engineer • Data Scientist • Researcher • Peer Reviewer</p>
+      <div class="contact-links">
+        <a href="mailto:yasinasadi@hotmail.com">
+          <img src="https://img.shields.io/badge/Email-FF5722?logo=microsoftoutlook&logoColor=white" alt="Email">
+          yasinasadi@hotmail.com
+        </a>
+        <a href="https://www.researchgate.net/profile/Yasin_Asadi" target="_blank">
+          <img src="https://img.shields.io/badge/ResearchGate-00D7FF?logo=researchgate&logoColor=white" alt="ResearchGate">
+          ResearchGate
+        </a>
+        <a href="https://orcid.org/0000-0001-8956-6403" target="_blank">
+          <img src="https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white" alt="ORCID">
+          ORCID
+        </a>
+        <a href="https://www.webofscience.com/profile/AAV-6573-2020" target="_blank">
+          <img src="https://img.shields.io/badge/Web_of_Science-0066B3?logo=web-of-science&logoColor=white" alt="ResearcherID">
+          ResearcherID
+        </a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57224466796" target="_blank">
+          <img src="https://img.shields.io/badge/Scopus-0066B3?logo=scopus&logoColor=white" alt="Scopus">
+          Scopus ID
+        </a>
+      </div>
+    </header>
+    <!-- Professional Summary -->
+    <section>
+      <h2><i class="fas fa-user"></i> Professional Summary</h2>
+      <p>Ph.D. applicant with 8+ years of experience in Computer Engineering, Research, Reviewing, and Lecturing. Expertise spans Machine Learning, Data Science, Artificial Intelligence, Network Engineering, and Network-on-Chip (NoC). Reviewed over 800 scientific papers for top-tier journals (Elsevier, IEEE, Springer, ACM). Active member of ACM, IEEE, and professional engineering societies. Currently engaged in interdisciplinary research with industry applications in ML-driven infrastructure monitoring, energy systems, and transportation. Committed to academic excellence, innovation, and knowledge dissemination.</p>
+    </section>
+    <!-- Academic Education -->
+    <section>
+      <h2><i class="fas fa-graduation-cap"></i> Academic Education</h2>
+      <ul>
+        <li>
+          <strong>M.Sc. in Computer Engineering</strong> (Computer Architecture System Design)<br>
+          <span class="institution iau">Islamic Azad University, Central Tehran Branch</span> – 2018
+        </li>
+        <li>
+          <strong>B.Sc. in Computer Engineering</strong> (Hardware Engineering)<br>
+          <span class="institution iau">Islamic Azad University, Qazvin Branch</span> – 2015
+        </li>
+      </ul>
+    </section>
+    <!-- Working & Teaching Experience -->
+    <section>
+      <h2><i class="fas fa-briefcase"></i> Working & Teaching Experience</h2>
+      <ul>
+        <li>
+          <strong>Lecturer</strong> – <span class="institution uast">University of Applied Science and Technology, Tehran</span> (2024–Present)<br>
+          Taught Windows 7/10/11, Linux; covered Operating Systems, ICDL, data science tools, research methods, and network engineering (ITF+, A+, Network+, MCSA, CCNA, MTCNA).
+        </li>
+        <li>
+          <strong>Lecturer & Researcher</strong> – <span class="institution iau">Islamic Azad University, Central Tehran Branch</span> (2020–Present)<br>
+          Same curriculum as above.
+        </li>
+        <li>
+          <strong>Honorary County Ambassador</strong> – <span class="institution i2or">I2OR, India</span> (2022–Present)<br>
+          Represented and promoted county interests, supported local initiatives, and contributed to development and visibility.
+        </li>
+        <li>
+          <strong>Lecturer</strong> – <span class="institution mft">Tehran Institute of Technology (MFT), Karaj</span> (2021–Present)<br>
+          Same curriculum as above.
+        </li>
+        <li>
+          <strong>Teaching Assistant</strong> – <span class="institution iau">Islamic Azad University, Qazvin Branch</span> (2017–2018)<br>
+          AI Introduction, Windows 7/10/Server, Linux Fedora, OS Lab, technical computer English.
+        </li>
+        <li>
+          <strong>Research Assistant</strong> – <span class="institution iau">Islamic Azad University, Central Tehran Branch</span> (2016–2018)<br>
+          Conducted research for thesis and projects in Computer Engineering, Electronics, and Technical English labs.
+        </li>
+        <li>
+          <strong>Teaching Assistant</strong> – <span class="institution iau">Islamic Azad University, Central Tehran Branch</span> (2015–2018)<br>
+          Taught AI, ML, Windows, Linux, OS Lab, electronics, and technical computer English.
+        </li>
+      </ul>
+    </section>
+    <!-- Projects -->
+    <section>
+      <h2><i class="fas fa-rocket"></i> Projects & Industry Applications</h2>
+      <ul>
+        <li>
+          <strong>Leveraging ML for Water Pipeline Anomaly Detection</strong> – <span class="institution water">Water & Sewerage Co., Iran</span> (2024)<br>
+          <p class="project-desc">Applied ML for early anomaly detection; reduced maintenance costs by up to 80%, improved system reliability, and enabled data-driven environmental monitoring.</p>
+        </li>
+        <li>
+          <strong>ML Approach for Detecting Electricity Consumption Irregularities</strong> – <span class="institution power">Power Distribution Co., Iran</span> (2023)<br>
+          <p class="project-desc">Detected grid anomalies with ML; achieved up to 75% issue avoidance and accurate fault identification, improving resource allocation and sustainability.</p>
+        </li>
+        <li>
+          <strong>ML Methods for Bus Scheduling Optimization</strong> – Suburbs Bus Co., Iran (2017)<br>
+          <p class="project-desc">Optimized public transport routes and schedules using ML, improving passenger flow prediction and operational efficiency.</p>
+        </li>
+        <li>
+          <strong>Digital Thermometer with ML on Atmel AVR</strong> – BSc Project (2015)<br>
+          <p class="project-desc">Embedded ML model on microcontroller for real-time, precise temperature sensing—demonstrating edge AI in hardware.</p>
+        </li>
+        <li>
+          <strong>Solar Power Plant Fuzzy Mechanization</strong> (2020–2021)<br>
+          <p class="project-desc">Designed fuzzy logic control systems for solar automation, improving energy efficiency and reducing operational costs.</p>
+        </li>
+        <li>
+          <strong>Khayyam International Inventions Festival</strong> (2018–2020)<br>
+          <p class="project-desc">Represented as official liaison and translator; enhanced international collaboration and event quality through cross-cultural coordination.</p>
+        </li>
+      </ul>
+    </section>
+    <!-- Specialization Education -->
+    <section>
+      <h2><i class="fas fa-certificate"></i> Specialization & Certifications</h2>
+      <div class="cert-group">
+        <h3><i class="fas fa-brain"></i> Machine Learning & AI</h3>
+        <ul class="accordion-list" id="ml-ai">
+          <li>Machine Learning Specialization – <img src="https://img.shields.io/badge/DeepLearning.AI-0095D9?logo=deeplearning&logoColor=white" alt="DeepLearning.AI"> DeepLearning.AI, Stanford (2024)</li>
+          <li>Advanced Learning Algorithms – <img src="https://img.shields.io/badge/DeepLearning.AI-0095D9?logo=deeplearning&logoColor=white" alt="DeepLearning.AI"> DeepLearning.AI</li>
+          <li>Supervised ML: Regression & Classification – <img src="https://img.shields.io/badge/DeepLearning.AI-0095D9?logo=deeplearning&logoColor=white" alt="DeepLearning.AI"> DeepLearning.AI</li>
+          <li>Unsupervised Learning & RL – <img src="https://img.shields.io/badge/DeepLearning.AI-0095D9?logo=deeplearning&logoColor=white" alt="DeepLearning.AI"> DeepLearning.AI</li>
+          <li>AI for Everyone – <img src="https://img.shields.io/badge/DeepLearning.AI-0095D9?logo=deeplearning&logoColor=white" alt="DeepLearning.AI"> DeepLearning.AI</li>
+          <li>Introduction to AI – <img src="https://img.shields.io/badge/IBM-05367A?logo=ibm&logoColor=white" alt="IBM"> IBM</li>
+          <li>Machine Learning with Big Data – <img src="https://img.shields.io/badge/UC_San_Diego-003087?logo=ucsd&logoColor=white" alt="UCSD"> UC San Diego</li>
+          <li>Machine Learning for All – <img src="https://img.shields.io/badge/University_of_London-003366?logo=uol&logoColor=white" alt="UoL"> University of London</li>
+          <li>Machine Learning Rock Star – <img src="https://img.shields.io/badge/SAS-ED1C24?logo=sas&logoColor=white" alt="SAS"> SAS</li>
+        </ul>
+        <button class="btn-toggle" onclick="toggleAccordion('ml-ai')">Show More</button>
+      </div>
+      <div class="cert-group">
+        <h3><i class="fas fa-code"></i> Programming & Data Science</h3>
+        <ul class="accordion-list" id="data-science">
+          <li>Python for Data Science – <img src="https://img.shields.io/badge/IBM-05367A?logo=ibm&logoColor=white" alt="IBM"> IBM</li>
+          <li>Data Analysis Using Python – <img src="https://img.shields.io/badge/IBM-05367A?logo=ibm&logoColor=white" alt="IBM"> IBM</li>
+          <li>Data Visualization – <img src="https://img.shields.io/badge/IBM-05367A?logo=ibm&logoColor=white" alt="IBM"> IBM</li>
+          <li>Big Data Foundations – <img src="https://img.shields.io/badge/IBM-05367A?logo=ibm&logoColor=white" alt="IBM"> IBM</li>
+          <li>Programming for Everybody – <img src="https://img.shields.io/badge/Univ._of_Michigan-FFCB05?logo=michigan&logoColor=white" alt="Michigan"> Univ. of Michigan</li>
+          <li>Data Science Ethics – <img src="https://img.shields.io/badge/Univ._of_Michigan-FFCB05?logo=michigan&logoColor=white" alt="Michigan"> Univ. of Michigan</li>
+          <li>Linux for Developers – <img src="https://img.shields.io/badge/Linux_Foundation-FCC627?logo=linuxfoundation&logoColor=white" alt="Linux"> Linux Foundation</li>
+        </ul>
+        <button class="btn-toggle" onclick="toggleAccordion('data-science')">Show More</button>
+      </div>
+      <div class="cert-group">
+        <h3><i class="fas fa-plug"></i> Networking & Communications</h3>
+        <ul class="accordion-list" id="networking">
+          <li>Fundamentals of Network Communication – <img src="https://img.shields.io/badge/Univ._of_Colorado-002855?logo=colorado&logoColor=white" alt="Colorado"> University of Colorado</li>
+          <li>TCP/IP and Advanced Topics – <img src="https://img.shields.io/badge/Univ._of_Colorado-002855?logo=colorado&logoColor=white" alt="Colorado"> University of Colorado</li>
+          <li>Wireless Communications – <img src="https://img.shields.io/badge/Yonsei_University-0033A0?logo=yonseiuniversity&logoColor=white" alt="Yonsei"> Yonsei University</li>
+          <li>Introduction to Satellite Communications – <img src="https://img.shields.io/badge/IMT-005EAA?logo=imt&logoColor=white" alt="IMT"> Institut Mines-Télécom</li>
+        </ul>
+        <button class="btn-toggle" onclick="toggleAccordion('networking')">Show More</button>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section>
+      <h2><i class="fas fa-star"></i> Professional Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4><i class="fab fa-windows"></i> Operating Systems</h4>
+          <p>Windows (XP/7/8/10/11, Server), Linux (Fedora, Ubuntu)</p>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-chalkboard-teacher"></i> Productivity & Teaching</h4>
+          <p>Microsoft Office, Google Suite, ICDL, Socratic Method, research-based teaching</p>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-database"></i> Programming & Data Science</h4>
+          <p>Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, XGBoost, Jupyter), HTML, CSS, high-performance computing</p>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-database"></i> Databases & Query</h4>
+          <p>SQL for data management and querying</p>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-chart-line"></i> Statistical & Analytical Tools</h4>
+          <p>Linear Algebra, Statistical Analysis, Data Analysis</p>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-wifi"></i> Networking & Virtualization Tools</h4>
+          <p>Wireshark, Packet Tracer, GNS3, VirtualBox, VMware</p>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-language"></i> Languages</h4>
+          <p>English (Fluent), Persian (Native)</p>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-users"></i> Soft Skills</h4>
+          <p>Project Management, Communication, Leadership, Problem-Solving, Teamwork, Adaptability, Time Management</p>
+        </div>
+      </div>
+    </section>
+    <!-- Publications -->
+    <section>
+      <h2><i class="fas fa-book-open"></i> Publications</h2>
+      <ul class="accordion-list" id="publications">
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
+          Optical network-on-chip (ONoC) architectures: a detailed analysis of optical router designs<br>
+          <em>Journal of Semiconductors</em> 46(3), 031401 (2025)
+          <span class="tag journal">Journal</span>
+        </li>
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
+          Employing machine learning in water infrastructure management: predicting pipeline failures for improved maintenance and sustainable operations<br>
+          <em>Industrial Artificial Intelligence</em> 2(1), 8 (2024)
+          <span class="tag journal">Journal</span>
+        </li>
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
+          A comprehensive study and holistic review of empowering network-on-chip application mapping through machine learning techniques<br>
+          <em>Discover Electronics</em> 1(1), 22 (2024)
+          <span class="tag journal">Journal</span>
+        </li>
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
+          Mind-Shift: A Method for Power and Energy Reduction in Application Mapping onto Network-Chip Architectures<br>
+          <em>13th International Conference on IT, Computer and Telecommunication, Tbilisi, Georgia</em> (2021)
+          <span class="tag conf">Conference</span>
+        </li>
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
+          An overview of the types of network operating systems<br>
+          <em>14th International Conference on IT, Computer and Telecommunication, Tbilisi, Georgia</em> (2022)
+          <span class="tag conf">Conference</span>
+        </li>
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Thesis-000000?logo=thesis&logoColor=white" alt="Thesis">
+          A Novel Approach in Application Fuzzy Mapping for 2D Wireless NoC in Power Reduction for IoT systems<br>
+          M.Sc. Thesis, <em>Islamic Azad University, Central Tehran Branch</em> (2018)
+          <span class="tag thesis">Thesis</span>
+        </li>
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
+          Artificial intelligence introduction to gaming systems<br>
+          <em>Iran National Conference on Information Technology</em> (2015)
+          <span class="tag conf">Conference</span>
+        </li>
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
+          Introduction to Artificial Intelligence, Expert and Fuzzy Systems<br>
+          <em>Domestic National Conference on Information Technology, Iran</em> (2017)
+          <span class="tag conf">Conference</span>
+        </li>
+        <li class="publication">
+          <img src="https://img.shields.io/badge/Review-000000?logo=book&logoColor=white" alt="Review">
+          The Art of Managing Complexity: A Book Review of Digital Design and Computer Architecture RISC-V Edition<br>
+          <em>Authorea Preprints</em> (2022)
+          <span class="tag review">Review</span>
+        </li>
+      </ul>
+      <button class="btn-toggle" onclick="toggleAccordion('publications')">Show More</button>
+    </section>
+    <!-- Peer Review & Activities -->
+    <section>
+      <h2><i class="fas fa-clipboard-check"></i> Peer Review & Academic Leadership</h2>
+      <ul>
+        <li>
+          <strong>Peer Reviewer (2016–Present)</strong><br>
+          Reviewed <strong>800+</strong> papers for:
+          <div class="review-orgs">
+            <div class="review-org">
+              <div class="org-container">
+                <div class="org-logo">
+                  <img src="https://img.shields.io/badge/Elsevier-C62828?logo=elsevier&logoColor=white" alt="Elsevier">
+                </div>
+                <div class="org-info">
+                  <span class="org-badge elsevier">Elsevier</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-org">
+              <div class="org-container">
+                <div class="org-logo">
+                  <img src="https://img.shields.io/badge/Springer-1478C8?logo=springer&logoColor=white" alt="Springer">
+                </div>
+                <div class="org-info">
+                  <span class="org-badge springer">Springer</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-org">
+              <div class="org-container">
+                <div class="org-logo">
+                  <img src="https://img.shields.io/badge/IEEE-1B6CA8?logo=ieee&logoColor=white" alt="IEEE">
+                </div>
+                <div class="org-info">
+                  <span class="org-badge ieee">IEEE</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-org">
+              <div class="org-container">
+                <div class="org-logo">
+                  <img src="https://img.shields.io/badge/ACM-111111?logo=acm&logoColor=white" alt="ACM">
+                </div>
+                <div class="org-info">
+                  <span class="org-badge acm">ACM</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-org">
+              <div class="org-container">
+                <div class="org-logo">
+                  <img src="https://img.shields.io/badge/Wiley-105DAB?logo=wiley&logoColor=white" alt="Wiley">
+                </div>
+                <div class="org-info">
+                  <span class="org-badge wiley">Wiley</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-org">
+              <div class="org-container">
+                <div class="org-logo">
+                  <img src="https://img.shields.io/badge/Taylor_%26_Francis-2F6FAE?logo=taylorandfrancis&logoColor=white" alt="Taylor & Francis">
+                </div>
+                <div class="org-info">
+                  <span class="org-badge taylor">Taylor & Francis</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-org">
+              <div class="org-container">
+                <div class="org-logo">
+                  <img src="https://img.shields.io/badge/IGI_Global-00834E?logo=igiglobal&logoColor=white" alt="IGI Global">
+                </div>
+                <div class="org-info">
+                  <span class="org-badge igiglobal">IGI Global</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="membership-item">
+            <div class="org-container">
+              <div class="org-logo">
+                <img src="https://img.shields.io/badge/Mendeley-C62828?logo=mendeley&logoColor=white" alt="Mendeley">
+              </div>
+              <div class="org-info">
+                <span class="org-badge mendeley">Mendeley, Elsevier</span>
+              </div>
+            </div>
+            <div class="text-content">
+              <p><strong>Mendeley Scientific Webinars Lead</strong> – (2022–Present)</p>
+              <p>Led global webinars on research tools and citation management.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="membership-item">
+            <div class="icon-only">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="text-content">
+              <p><strong>Young Researchers and Elite Club</strong> – Member (2015–Present)</p>
+              <p>Organized webinars and workshops on emerging technologies and research methods.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Memberships -->
+    <section>
+      <h2><i class="fas fa-users"></i> Professional Memberships</h2>
+      <ul>
+        <li>
+          <div class="membership-item">
+            <div class="org-container">
+              <div class="org-logo">
+                <img src="https://img.shields.io/badge/ACM-111111?logo=acm&logoColor=white" alt="ACM">
+              </div>
+              <div class="org-info">
+                <span class="org-badge acm">ACM</span>
+              </div>
+            </div>
+            <div class="text-content">
+              <p>Professional Member (2020–Present)</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="membership-item">
+            <div class="org-container">
+              <div class="org-logo">
+                <img src="https://img.shields.io/badge/IEEE-1B6CA8?logo=ieee&logoColor=white" alt="IEEE">
+              </div>
+              <div class="org-info">
+                <span class="org-badge ieee">IEEE</span>
+              </div>
+            </div>
+            <div class="text-content">
+              <p>Computer Society Member (2022–Present)</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="membership-item">
+            <div class="org-container">
+              <div class="org-logo">
+                <img src="https://img.shields.io/badge/CSTA-5A189A?logo=csteachersassociation&logoColor=white" alt="CSTA">
+              </div>
+              <div class="org-info">
+                <span class="org-badge csta">CSTA</span>
+              </div>
+            </div>
+            <div class="text-content">
+              <p>Member (2020–Present)</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="membership-item">
+            <span class="institution-badge iaeng-badge">IAENG</span>
+            <div class="text-content">
+              <p>International Association of Engineers (2023–Present)</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="membership-item">
+            <span class="institution-badge nspe-badge">NSPE</span>
+            <div class="text-content">
+              <p>National Society of Professional Engineers (2024–Present)</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="membership-item">
+            <div class="icon-only">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="text-content">
+              <p>Young Researchers and Elite Club (2015–Present)</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Teaching -->
+    <section>
+      <h2><i class="fas fa-chalkboard"></i> Courses Taught (2015–Present)</h2>
+      <div class="cert-group">
+        <h3><i class="fab fa-windows"></i> Operating Systems & Admin</h3>
+        <ul class="accordion-list" id="os-courses">
+          <li>Windows 7/10/11 Administration</li>
+          <li>Linux System Admin (Fedora/Ubuntu)</li>
+          <li>Windows Server & Virtualization</li>
+          <li>VirtualBox & VMware</li>
+          <li>ICDL Advanced (Spreadsheets, Databases)</li>
+        </ul>
+        <button class="btn-toggle" onclick="toggleAccordion('os-courses')">Show More</button>
+      </div>
+      <div class="cert-group">
+        <h3><i class="fas fa-wifi"></i> Networking</h3>
+        <ul class="accordion-list" id="networking-courses">
+          <li>CCNA, MTCNA, Network+, A+, MCSA</li>
+          <li>Enterprise Network Design</li>
+        </ul>
+        <button class="btn-toggle" onclick="toggleAccordion('networking-courses')">Show More</button>
+      </div>
+      <div class="cert-group">
+        <h3><i class="fas fa-brain"></i> Data Science & AI</h3>
+        <ul class="accordion-list" id="ds-ai-courses">
+          <li>Python for Data Analysis (Pandas/NumPy)</li>
+          <li>Applied ML (Scikit-learn)</li>
+          <li>Deep Learning (TensorFlow/Keras)</li>
+          <li>Data Visualization (Matplotlib/Seaborn)</li>
+        </ul>
+        <button class="btn-toggle" onclick="toggleAccordion('ds-ai-courses')">Show More</button>
+      </div>
+      <div class="cert-group">
+        <h3><i class="fas fa-book-open"></i> Research & Academic Skills</h3>
+        <ul class="accordion-list" id="research-courses">
+          <li>Technical Research Methods</li>
+          <li>Academic Writing (IEEE Standards)</li>
+          <li>How to Publish Scientific Papers</li>
+        </ul>
+        <button class="btn-toggle" onclick="toggleAccordion('research-courses')">Show More</button>
+      </div>
+    </section>
+    <!-- Awards -->
+    <section>
+      <h2><i class="fas fa-trophy"></i> Awards & Honors</h2>
+      <ul>
+        <li>
+          <img src="https://img.shields.io/badge/Graduation-7B1FA2?logo=graduation&logoColor=white" alt="Graduation">
+          <strong>Top Graduate Award</strong> – M.Sc. in Computer Engineering, <span class="institution iau">Islamic Azad University</span>, 2018
+        </li>
+        <li>
+          <img src="https://img.shields.io/badge/Reviewer-FFC107?logo=star&logoColor=white" alt="Reviewer">
+          <strong>Best Reviewer of the Year</strong> – Springer-Nature, <em>Journal of Electrical Engineering & Technology</em>, 2023
+        </li>
+      </ul>
+    </section>
+    <!-- Contact -->
+    <section class="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <div class="contact-item">
+        <img src="https://img.shields.io/badge/Email-FF5722?logo=microsoftoutlook&logoColor=white" alt="Email">
+        <a href="mailto:yasinasadi@hotmail.com">yasinasadi@hotmail.com</a>
+      </div>
+      <div class="contact-item">
+        <img src="https://img.shields.io/badge/ResearchGate-00D7FF?logo=researchgate&logoColor=white" alt="ResearchGate">
+        <a href="https://www.researchgate.net/profile/Yasin_Asadi" target="_blank">ResearchGate</a>
+      </div>
+      <div class="contact-item">
+        <img src="https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white" alt="ORCID">
+        <a href="https://orcid.org/0000-0001-8956-6403" target="_blank">ORCID: 0000-0001-8956-6403</a>
+      </div>
+      <div class="contact-item">
+        <img src="https://img.shields.io/badge/Web_of_Science-0066B3?logo=web-of-science&logoColor=white" alt="ResearcherID">
+        <a href="https://www.webofscience.com/profile/AAV-6573-2020" target="_blank">ResearcherID</a>
+      </div>
+      <div class="contact-item">
+        <img src="https://img.shields.io/badge/Scopus-0066B3?logo=scopus&logoColor=white" alt="Scopus">
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57224466796" target="_blank">Scopus Author ID: 57224466796</a>
+      </div>
+      <div class="contact-item">
+        <img src="https://img.shields.io/badge/Google_Scholar-1A73E8?logo=googlescholar&logoColor=white" alt="Google Scholar">
+        <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank">Google Scholar Profile</a>
+      </div>
+      <div class="contact-item">
+        <img src="https://img.shields.io/badge/Portfolio-212121?logo=github&logoColor=white" alt="Portfolio">
+        <a href="https://yasin-asadi-data-ml.github.io" target="_blank">Portfolio Website</a>
+      </div>
+      <div class="contact-item">
+        <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub">
+        <a href="https://github.com/yasin-asadi-data-ml" target="_blank">GitHub Profile</a>
+      </div>
+    </section>
+    <footer>
+      © 2025 Yasin Asadi | Designed for Academic & Industry Engagement
+    </footer>
+  </div>
+  <script>
+    function toggleAccordion(id) {
+      const list = document.getElementById(id);
+      const btn = event.target;
+      const isExpanded = list.classList.contains("expanded");
+      if (isExpanded) {
+        list.classList.remove("expanded");
+        btn.textContent = "Show More";
+      } else {
+        list.classList.add("expanded");
+        btn.textContent = "Show Less";
       }
-      // Create show more button
-      const btn = document.createElement('button');
-      btn.textContent = 'Show More';
-      btn.className = 'show-more';
-      btn.addEventListener('click', () => {
-        for (let i = limit; i < items.length; i++) {
-          items[i].style.display = 'list-item';
-        }
-        btn.style.display = 'none';
-      });
-      ul.after(btn);
     }
-  });
-</script>
-
+  </script>
 </body>
 </html>
