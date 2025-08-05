@@ -622,68 +622,277 @@
       </ul>
     </section>
 
-    
     <!-- Publications -->
+<section>
+  <h2><i class="fas fa-book"></i> Publications</h2>
+  <ul class="accordion-list" id="publications">
+    <!-- Publication 1: Optical NoC -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
+      <strong>Optical network-on-chip (ONoC) architectures: a detailed analysis of optical router designs</strong><br>
+      <em>Journal of Semiconductors</em> 46(3), 031401 (2025)
+      <br>
+      <a href="https://iopscience.iop.org/article/10.1088/1674-4926/24060006" target="_blank" class="doi-link" style="color: #3498db; text-decoration: none; font-size: 0.95rem; margin-top: 4px; display: inline-block;">
+        <i class="fas fa-link"></i> DOI: 10.1088/1674-4926/24060006
+      </a>
+      <span class="tag journal">Journal</span>
+
+      <div style="margin-top: 10px;">
+        <button class="btn-toggle" onclick="toggleAbstract('abstract-onoc')">Abstract</button>
+      </div>
+      <div id="abstract-onoc" class="abstract-content" style="margin-top: 12px; padding-left: 10px; border-left: 3px solid #3498db; display: none; font-size: 0.98rem; line-height: 1.6;">
+        Optical network-on-chip (ONoC) systems have emerged as a promising solution to overcome limitations of traditional electronic interconnects. Efficient ONoC architectures rely on optical routers, enabling high-speed data transfer, efficient routing, and scalability. This paper presents a comprehensive survey analyzing optical router designs, specifically microring resonators (MRRs), Mach−Zehnder interferometers (MZIs), and hybrid architectures. Selected comparison criteria, chosen for their critical importance, significantly impact router functionality and performance. By emphasizing these criteria, valuable insights into the strengths and limitations of different designs are gained, facilitating informed decisions and advancements in optical networking. While other factors contribute to performance and efficiency, the chosen criteria consistently address fundamental elements, enabling meaningful evaluation. This work serves as a valuable resource for beginners, providing a solid foundation in understanding ONoC and optical routers. It also offers an in-depth survey for experts, laying the groundwork for further exploration. Additionally, the importance of considering design constraints and requirements when selecting an optimal router design is highlighted. Continued research and innovation will enable the development of efficient optical router solutions that meet the evolving needs of modern computing systems. This survey underscores the significance of ongoing advancements in the field and their potential impact on future technologies.
+      </div>
+      <p style="font-size: 0.9rem; margin-top: 6px; color: #555;">
+        <strong>Keywords:</strong> optical network-on-chip (ONoC), optical routers, microring resonators (MRRs), Mach−Zehnder interferometers (MZIs), optical networking scalability
+      </p>
+    </li>
+
+    <!-- Publication 2: ML in Water Infrastructure -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
+      <strong>Employing machine learning in water infrastructure management: predicting pipeline failures for improved maintenance and sustainable operations</strong><br>
+      <em>Industrial Artificial Intelligence</em> 2(1), 8 (2024)
+      <br>
+      <a href="https://doi.org/10.1007/s44244-024-00022-w" target="_blank" class="doi-link" style="color: #3498db; text-decoration: none; font-size: 0.95rem; margin-top: 4px; display: inline-block;">
+        <i class="fas fa-link"></i> DOI: 10.1007/s44244-024-00022-w
+      </a>
+      <span class="tag journal">Journal</span>
+
+      <div style="margin-top: 10px;">
+        <button class="btn-toggle" onclick="toggleAbstract('abstract-water')">Abstract</button>
+      </div>
+      <div id="abstract-water" class="abstract-content" style="margin-top: 12px; padding-left: 10px; border-left: 3px solid #3498db; display: none; font-size: 0.98rem; line-height: 1.6;">
+        This study explores techniques for managing class imbalance in predictive modeling to forecast water pipe failures using XGBoost and logistic regression. Given the significant challenges posed by water pipeline failures—such as service disruptions, costly repairs, and environmental hazards—there is a pressing need for effective predictive models. Using a dataset from 2015 to 2022 that includes features like pipe age, material, diameter, and maintenance history, the study applies methods such as random oversampling and undersampling to improve model performance. Results show that XGBoost outperforms logistic regression in recall (0.795 vs. 0.683), a critical metric for managing water infrastructure. Although logistic regression has slightly better precision (0.695), XGBoost demonstrates superior overall performance with higher Matthews correlation coefficient (MCC) and F1 score, effectively balancing precision and recall.
+      </div>
+      <p style="font-size: 0.9rem; margin-top: 6px; color: #555;">
+        <strong>Keywords:</strong> Machine learning, Water pipeline, Water management system, Logistic regression, XGBoost
+      </p>
+    </li>
+
+    <!-- Publication 3: ML for NoC Mapping -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
+      <strong>A comprehensive study and holistic review of empowering network-on-chip application mapping through machine learning techniques</strong><br>
+      <em>Discover Electronics</em> 1(1), 22 (2024)
+      <br>
+      <a href="https://doi.org/10.1007/s44291-024-00027-w" target="_blank" class="doi-link" style="color: #3498db; text-decoration: none; font-size: 0.95rem; margin-top: 4px; display: inline-block;">
+        <i class="fas fa-link"></i> DOI: 10.1007/s44291-024-00027-w
+      </a>
+      <span class="tag journal">Journal</span>
+
+      <div style="margin-top: 10px;">
+        <button class="btn-toggle" onclick="toggleAbstract('abstract-noc')">Abstract</button>
+      </div>
+      <div id="abstract-noc" class="abstract-content" style="margin-top: 12px; padding-left: 10px; border-left: 3px solid #3498db; display: none; font-size: 0.98rem; line-height: 1.6;">
+        This study investigates machine learning (ML) techniques for optimizing Network-on-Chip (NoC) application mapping, focusing on supervised learning, unsupervised learning, reinforcement learning, and neural networks. Through a comparative analysis of recent research, the study reveals that supervised learning methods, like artificial neural networks (ANNs), enhance core vulnerability prediction and runtime mapping. Unsupervised learning techniques improve NoC mapping via multi-label models, while reinforcement learning approaches, including actor-critic frameworks, reduce communication costs and power consumption. Scenario-aware strategies adapt mapping processes to varying operational contexts. Despite these advancements, challenges such as computational overhead, data quality, and model interpretability persist. Future research should focus on scalable ML algorithms, improving data quality, and enhancing model transparency. This study underscores the significant potential of ML to advance NoC application mapping and highlights the need for ongoing innovation to address existing challenges.
+      </div>
+      <p style="font-size: 0.9rem; margin-top: 6px; color: #555;">
+        <strong>Keywords:</strong> Network-on-Chip (NoC), Machine Learning (ML), Application Mapping, On-chip communication
+      </p>
+    </li>
+
+    <!-- Publication 4: AI in Gaming -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
+      <strong>Artificial intelligence introduction to gaming systems</strong><br>
+      <em>Iran National Conference on Information Technology</em> (2015)
+      <span class="tag conf">Conference</span>
+    </li>
+
+    <!-- Publication 5: AI, Expert & Fuzzy Systems -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
+      <strong>Introduction to Artificial Intelligence, Expert and Fuzzy Systems</strong><br>
+      <em>Domestic National Conference on Information Technology, Iran</em> (2017)
+      <span class="tag conf">Conference</span>
+    </li>
+
+    <!-- Publication 6: MSc Thesis -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Thesis-000000?logo=thesis&logoColor=white" alt="Thesis">
+      <strong>A Novel Approach in Application Fuzzy Mapping for Two-Dimensional Wireless Network-On-Chip in Power Reduction for IoT based systems</strong><br>
+      M.Sc. Thesis, <em>Islamic Azad University, Central Tehran Branch</em> (2018)
+      <span class="tag thesis">Thesis</span>
+    </li>
+
+    <!-- Publication 7: Mind-Shift Paper -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
+      <strong>Mind-Shift: A Method for Power and Energy Reduction in Application Mapping onto Network-Chip Architectures</strong><br>
+      <em>13th International Conference on Information Technology, Computer and Telecommunication, Tbilisi, Georgia</em> (2021)
+      <span class="tag conf">Conference</span>
+    </li>
+
+    <!-- Publication 8: Network OS Overview -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
+      <strong>An overview of the types of network operating systems</strong><br>
+      <em>14th International Conference on Information Technology, Computer and Telecommunication, Tbilisi, Georgia</em> (2022)
+      <span class="tag conf">Conference</span>
+    </li>
+
+    <!-- Publication 9: Book Review -->
+    <li class="publication">
+      <img src="https://img.shields.io/badge/Review-000000?logo=book&logoColor=white" alt="Review">
+      <strong>The Art of Managing Complexity: A Book Review of Digital Design and Computer Architecture RISC-V Edition</strong><br>
+      <em>Authorea Preprints</em> (2022)
+      <span class="tag review">Review</span>
+    </li>
+  </ul>
+  <button class="btn-toggle" onclick="toggleAccordion('publications')">Show More</button>
+</section>
+
+
+<!-- Peer Review & Academic Leadership -->
+<section>
+  <h2><i class="fas fa-check"></i> Peer Review & Academic Leadership</h2>
+  <p>Reviewed <strong>800+</strong> papers for leading scientific publishers:</p>
+  <ul style="margin-top: 16px; padding-left: 30px; list-style: none;">
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/Elsevier-C62828?logo=elsevier&logoColor=white" 
+           alt="Elsevier" 
+           style="height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.15)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <strong>Elsevier</strong>
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/Springer-1478C8?logo=springer&logoColor=white" 
+           alt="Springer Nature" 
+           style="height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.15)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <strong>Springer Nature</strong>
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/IEEE-1B6CA8?logo=ieee&logoColor=white" 
+           alt="IEEE" 
+           style="height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.15)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <strong>The Institute of Electrical and Electronics Engineers (IEEE)</strong>
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/ACM-111111?logo=acm&logoColor=white" 
+           alt="ACM" 
+           style="height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.15)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <strong>Association for Computing Machinery (ACM)</strong>
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/Wiley-105DAB?logo=wiley&logoColor=white" 
+           alt="Wiley" 
+           style="height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.15)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <strong>Wiley</strong>
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/Taylor_%26_Francis-2F6FAE?logo=taylorandfrancis&logoColor=white" 
+           alt="Taylor & Francis" 
+           style="height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.15)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <strong>Taylor & Francis</strong>
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/IGI_Global-00834E?logo=igiglobal&logoColor=white" 
+           alt="IGI Global" 
+           style="height: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.15)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+      <strong>IGI Global</strong>
+    </li>
+  </ul>
+
+  <ul style="margin-top: 20px;">
+    <li>
+      <img src="https://img.shields.io/badge/Mendeley-C62828?logo=mendeley&logoColor=white" 
+           alt="Mendeley" 
+           style="height: 30px; vertical-align: middle; margin-right: 8px; transition: transform 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)';"
+           onmouseout="this.style.transform='translateY(0)';">
+      <strong>Mendeley, Elsevier</strong> – Scientific Webinars Lead (2022–Present)<br>
+      <span style="color: #555; font-style: italic; margin-left: 42px;">Led global webinars on research tools and citation management.</span>
+    </li>
+    <li style="margin-top: 16px;">
+      <i class="fas fa-users" style="color: var(--accent); width: 30px; height: 30px; text-align: center; margin-right: 8px;"></i>
+      <strong>Young Researchers and Elite Club</strong> – Member (2015–Present)<br>
+      <span style="color: #555; font-style: italic; margin-left: 42px;">Organized webinars and workshops on emerging technologies and research methods.</span>
+    </li>
+  </ul>
+</section>
+
+<!-- Professional Memberships -->
+<section>
+  <h2><i class="fas fa-handshake"></i> Professional Memberships</h2>
+  <ul style="margin-top: 16px; padding-left: 30px; list-style: none;">
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/ACM-111111?logo=acm&logoColor=white" 
+           alt="ACM" 
+           style="height: 30px; transition: transform 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)';"
+           onmouseout="this.style.transform='translateY(0)';">
+      <strong>Association for Computing Machinery (ACM)</strong> – Professional Member (2020–Present)
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/IEEE-1B6CA8?logo=ieee&logoColor=white" 
+           alt="IEEE" 
+           style="height: 30px; transition: transform 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)';"
+           onmouseout="this.style.transform='translateY(0)';">
+      <strong>The Institute of Electrical and Electronics Engineers (IEEE)</strong> – Computer Society Member (2022–Present)
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/CSTA-5A189A?logo=csteachersassociation&logoColor=white" 
+           alt="CSTA" 
+           style="height: 30px; transition: transform 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)';"
+           onmouseout="this.style.transform='translateY(0)';">
+      <strong>Computer Science Teachers Association (CSTA)</strong> – Member (2020–Present)
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/IAENG-2575D0?logo=iaeng&logoColor=white" 
+           alt="IAENG" 
+           style="height: 30px; transition: transform 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)';"
+           onmouseout="this.style.transform='translateY(0)';">
+      <strong>International Association of Engineers (IAENG)</strong> – Member (2023–Present)
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <img src="https://img.shields.io/badge/NSPE-8C2FA5?logo=nspe&logoColor=white" 
+           alt="NSPE" 
+           style="height: 30px; transition: transform 0.3s ease; cursor: pointer;" 
+           onmouseover="this.style.transform='translateY(-4px)';"
+           onmouseout="this.style.transform='translateY(0)';">
+      <strong>National Society of Professional Engineers (NSPE)</strong> – Member (2024–Present)
+    </li>
+    <li style="margin-bottom: 14px; display: flex; align-items: center; gap: 12px;">
+      <i class="fas fa-users" style="color: var(--accent); width: 30px; height: 30px; text-align: center; transition: transform 0.3s ease;" 
+         onmouseover="this.style.transform='translateY(-4px)';"
+         onmouseout="this.style.transform='translateY(0)';"></i>
+      <strong>Young Researchers and Elite Club</strong> – Member (2015–Present)
+    </li>
+  </ul>
+</section>
+    <!-- Awards -->
     <section>
-      <h2><i class="fas fa-book"></i> Publications</h2>
-      <ul class="accordion-list" id="publications">
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
-          Optical network-on-chip (ONoC) architectures: a detailed analysis of optical router designs<br>
-          <em>Journal of Semiconductors</em> 46(3), 031401 (2025)
-          <span class="tag journal">Journal</span>
+      <h2><i class="fas fa-trophy"></i> Awards & Honors</h2>
+      <ul>
+        <li>
+          <img src="https://img.shields.io/badge/Graduation-7B1FA2?logo=graduation&logoColor=white" alt="Graduation">
+          <strong>Top Graduate Award</strong> – M.Sc. in Computer Engineering, <span class="institution iau">Islamic Azad University</span>, 2018
         </li>
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
-          Employing machine learning in water infrastructure management: predicting pipeline failures for improved maintenance and sustainable operations<br>
-          <em>Industrial Artificial Intelligence</em> 2(1), 8 (2024)
-          <span class="tag journal">Journal</span>
-        </li>
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Journal-000000?logo=journal&logoColor=white" alt="Journal">
-          A comprehensive study and holistic review of empowering network-on-chip application mapping through machine learning techniques<br>
-          <em>Discover Electronics</em> 1(1), 22 (2024)
-          <span class="tag journal">Journal</span>
-        </li>
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
-          Mind-Shift: A Method for Power and Energy Reduction in Application Mapping onto Network-Chip Architectures<br>
-          <em>13th International Conference on IT, Computer and Telecommunication, Tbilisi, Georgia</em> (2021)
-          <span class="tag conf">Conference</span>
-        </li>
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
-          An overview of the types of network operating systems<br>
-          <em>14th International Conference on IT, Computer and Telecommunication, Tbilisi, Georgia</em> (2022)
-          <span class="tag conf">Conference</span>
-        </li>
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Thesis-000000?logo=thesis&logoColor=white" alt="Thesis">
-          A Novel Approach in Application Fuzzy Mapping for 2D Wireless NoC in Power Reduction for IoT systems<br>
-          M.Sc. Thesis, <em>Islamic Azad University, Central Tehran Branch</em> (2018)
-          <span class="tag thesis">Thesis</span>
-        </li>
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
-          Artificial intelligence introduction to gaming systems<br>
-          <em>Iran National Conference on Information Technology</em> (2015)
-          <span class="tag conf">Conference</span>
-        </li>
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Conference-000000?logo=conference&logoColor=white" alt="Conference">
-          Introduction to Artificial Intelligence, Expert and Fuzzy Systems<br>
-          <em>Domestic National Conference on Information Technology, Iran</em> (2017)
-          <span class="tag conf">Conference</span>
-        </li>
-        <li class="publication">
-          <img src="https://img.shields.io/badge/Review-000000?logo=book&logoColor=white" alt="Review">
-          The Art of Managing Complexity: A Book Review of Digital Design and Computer Architecture RISC-V Edition<br>
-          <em>Authorea Preprints</em> (2022)
-          <span class="tag review">Review</span>
+        <li>
+          <img src="https://img.shields.io/badge/Reviewer-FFC107?logo=star&logoColor=white" alt="Reviewer">
+          <strong>Best Reviewer of the Year</strong> – Springer-Nature, <em>Journal of Electrical Engineering & Technology</em>, 2023
         </li>
       </ul>
-      <button class="btn-toggle" onclick="toggleAccordion('publications')">Show More</button>
     </section>
+
+
 
 <!-- Specialization Education -->
 <section>
@@ -860,252 +1069,6 @@
 
 
 
-    <!-- Peer Review & Activities -->
-    <section>
-      <h2><i class="fas fa-check"></i> Peer Review & Academic Leadership</h2>
-      <ul>
-        <li>
-          <strong>Peer Reviewer (2016–Present)</strong><br>
-          Reviewed <strong>800+</strong> papers for:
-          <div class="review-orgs">
-            <div class="review-org">
-              <div class="org-container">
-                <div class="org-logo">
-                  <img src="https://img.shields.io/badge/Elsevier-C62828?logo=elsevier&logoColor=white" alt="Elsevier">
-                </div>
-                <div class="org-info">
-                  <span class="org-badge elsevier">Elsevier</span>
-                </div>
-              </div>
-            </div>
-            <div class="review-org">
-              <div class="org-container">
-                <div class="org-logo">
-                  <img src="https://img.shields.io/badge/Springer-1478C8?logo=springer&logoColor=white" alt="Springer">
-                </div>
-                <div class="org-info">
-                  <span class="org-badge springer">Springer</span>
-                </div>
-              </div>
-            </div>
-            <div class="review-org">
-              <div class="org-container">
-                <div class="org-logo">
-                  <img src="https://img.shields.io/badge/IEEE-1B6CA8?logo=ieee&logoColor=white" alt="IEEE">
-                </div>
-                <div class="org-info">
-                  <span class="org-badge ieee">IEEE</span>
-                </div>
-              </div>
-            </div>
-            <div class="review-org">
-              <div class="org-container">
-                <div class="org-logo">
-                  <img src="https://img.shields.io/badge/ACM-111111?logo=acm&logoColor=white" alt="ACM">
-                </div>
-                <div class="org-info">
-                  <span class="org-badge acm">ACM</span>
-                </div>
-              </div>
-            </div>
-            <div class="review-org">
-              <div class="org-container">
-                <div class="org-logo">
-                  <img src="https://img.shields.io/badge/Wiley-105DAB?logo=wiley&logoColor=white" alt="Wiley">
-                </div>
-                <div class="org-info">
-                  <span class="org-badge wiley">Wiley</span>
-                </div>
-              </div>
-            </div>
-            <div class="review-org">
-              <div class="org-container">
-                <div class="org-logo">
-                  <img src="https://img.shields.io/badge/Taylor_%26_Francis-2F6FAE?logo=taylorandfrancis&logoColor=white" alt="Taylor & Francis">
-                </div>
-                <div class="org-info">
-                  <span class="org-badge taylor">Taylor & Francis</span>
-                </div>
-              </div>
-            </div>
-            <div class="review-org">
-              <div class="org-container">
-                <div class="org-logo">
-                  <img src="https://img.shields.io/badge/IGI_Global-00834E?logo=igiglobal&logoColor=white" alt="IGI Global">
-                </div>
-                <div class="org-info">
-                  <span class="org-badge igiglobal">IGI Global</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="membership-item">
-            <div class="org-container">
-              <div class="org-logo">
-                <img src="https://img.shields.io/badge/Mendeley-C62828?logo=mendeley&logoColor=white" alt="Mendeley">
-              </div>
-              <div class="org-info">
-                <span class="org-badge mendeley">Mendeley, Elsevier</span>
-              </div>
-            </div>
-            <div class="text-content">
-              <p><strong>Mendeley Scientific Webinars Lead</strong> – (2022–Present)</p>
-              <p>Led global webinars on research tools and citation management.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="membership-item">
-            <div class="icon-only">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="text-content">
-              <p><strong>Young Researchers and Elite Club</strong> – Member (2015–Present)</p>
-              <p>Organized webinars and workshops on emerging technologies and research methods.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Memberships -->
-    <section>
-      <h2><i class="fas fa-handshake"></i> Professional Memberships</h2>
-      <ul>
-        <li>
-          <div class="membership-item">
-            <div class="org-container">
-              <div class="org-logo">
-                <img src="https://img.shields.io/badge/ACM-111111?logo=acm&logoColor=white" alt="ACM">
-              </div>
-              <div class="org-info">
-                <span class="org-badge acm">ACM</span>
-              </div>
-            </div>
-            <div class="text-content">
-              <p>Professional Member (2020–Present)</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="membership-item">
-            <div class="org-container">
-              <div class="org-logo">
-                <img src="https://img.shields.io/badge/IEEE-1B6CA8?logo=ieee&logoColor=white" alt="IEEE">
-              </div>
-              <div class="org-info">
-                <span class="org-badge ieee">IEEE</span>
-              </div>
-            </div>
-            <div class="text-content">
-              <p>Computer Society Member (2022–Present)</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="membership-item">
-            <div class="org-container">
-              <div class="org-logo">
-                <img src="https://img.shields.io/badge/CSTA-5A189A?logo=csteachersassociation&logoColor=white" alt="CSTA">
-              </div>
-              <div class="org-info">
-                <span class="org-badge csta">CSTA</span>
-              </div>
-            </div>
-            <div class="text-content">
-              <p>Member (2020–Present)</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="membership-item">
-            <span class="institution-badge iaeng-badge">IAENG</span>
-            <div class="text-content">
-              <p>International Association of Engineers (2023–Present)</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="membership-item">
-            <span class="institution-badge nspe-badge">NSPE</span>
-            <div class="text-content">
-              <p>National Society of Professional Engineers (2024–Present)</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="membership-item">
-            <div class="icon-only">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="text-content">
-              <p>Young Researchers and Elite Club (2015–Present)</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Teaching -->
-    <section>
-      <h2><i class="fas fa-chalkboard"></i> Courses Taught (2015–Present)</h2>
-      <div class="cert-group">
-        <h3><i class="fas fa-desktop"></i> Operating Systems & Admin</h3>
-        <ul class="accordion-list" id="os-courses">
-          <li>Windows 7/10/11 Administration</li>
-          <li>Linux System Admin (Fedora/Ubuntu)</li>
-          <li>Windows Server & Virtualization</li>
-          <li>VirtualBox & VMware</li>
-          <li>ICDL Advanced (Spreadsheets, Databases)</li>
-        </ul>
-        <button class="btn-toggle" onclick="toggleAccordion('os-courses')">Show More</button>
-      </div>
-      <div class="cert-group">
-        <h3><i class="fas fa-network-wired"></i> Networking</h3>
-        <ul class="accordion-list" id="networking-courses">
-          <li>CCNA, MTCNA, Network+, A+, MCSA</li>
-          <li>Enterprise Network Design</li>
-        </ul>
-        <button class="btn-toggle" onclick="toggleAccordion('networking-courses')">Show More</button>
-      </div>
-      <div class="cert-group">
-        <h3><i class="fas fa-microchip"></i> Data Science & AI</h3>
-        <ul class="accordion-list" id="ds-ai-courses">
-          <li>Python for Data Analysis (Pandas/NumPy)</li>
-          <li>Applied ML (Scikit-learn)</li>
-          <li>Deep Learning (TensorFlow/Keras)</li>
-          <li>Data Visualization (Matplotlib/Seaborn)</li>
-        </ul>
-        <button class="btn-toggle" onclick="toggleAccordion('ds-ai-courses')">Show More</button>
-      </div>
-      <div class="cert-group">
-        <h3><i class="fas fa-book"></i> Research & Academic Skills</h3>
-        <ul class="accordion-list" id="research-courses">
-          <li>Technical Research Methods</li>
-          <li>Academic Writing (IEEE Standards)</li>
-          <li>How to Publish Scientific Papers</li>
-        </ul>
-        <button class="btn-toggle" onclick="toggleAccordion('research-courses')">Show More</button>
-      </div>
-    </section>
-
-    <!-- Awards -->
-    <section>
-      <h2><i class="fas fa-trophy"></i> Awards & Honors</h2>
-      <ul>
-        <li>
-          <img src="https://img.shields.io/badge/Graduation-7B1FA2?logo=graduation&logoColor=white" alt="Graduation">
-          <strong>Top Graduate Award</strong> – M.Sc. in Computer Engineering, <span class="institution iau">Islamic Azad University</span>, 2018
-        </li>
-        <li>
-          <img src="https://img.shields.io/badge/Reviewer-FFC107?logo=star&logoColor=white" alt="Reviewer">
-          <strong>Best Reviewer of the Year</strong> – Springer-Nature, <em>Journal of Electrical Engineering & Technology</em>, 2023
-        </li>
-      </ul>
-    </section>
-
     <!-- Contact -->
     <section class="contact">
       <h2><i class="fas fa-envelope"></i> Contact</h2>
@@ -1147,11 +1110,14 @@
       © <script>document.write(new Date().getFullYear())</script> Yasin Asadi | Designed for Academic & Industry Engagement
     </footer>
   </div>
+
+
+
 <script>
+  // Toggle accordion lists (e.g., certifications, courses)
   function toggleAccordion(id) {
     const list = document.getElementById(id);
     const btn = event.target;
-    const items = list.querySelectorAll("li");
     const isExpanded = list.classList.contains("expanded");
 
     if (isExpanded) {
@@ -1162,23 +1128,46 @@
       btn.textContent = "Show Less";
     }
 
-    // ✅ Hide button if 5 or fewer items
+    // Auto-hide button if list has 5 or fewer items
+    const items = list.querySelectorAll("li");
     if (items.length <= 5) {
       btn.style.display = "none";
     }
   }
 
-  // ✅ On page load: auto-hide "Show More" buttons for short lists
+  // Toggle abstract visibility
+  function toggleAbstract(id) {
+    const abstract = document.getElementById(id);
+    const btn = event.target;
+
+    if (abstract.style.display === "block") {
+      abstract.style.display = "none";
+      btn.textContent = "Abstract";
+    } else {
+      abstract.style.display = "block";
+      btn.textContent = "Hide Abstract";
+    }
+  }
+
+  // On page load: hide "Show More" buttons for short lists & initialize abstract state
   document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".accordion-list").forEach(list => {
-      const items = list.querySelectorAll("li");
-      const btn = list.nextElementSibling;
-      if (items.length <= 5 && btn && btn.classList.contains("btn-toggle")) {
-        btn.style.display = "none";
+    // Handle publication list
+    const pubList = document.getElementById("publications");
+    const pubBtn = document.querySelector("#publications ~ .btn-toggle");
+    if (pubList && pubBtn) {
+      const items = pubList.querySelectorAll("li");
+      if (items.length <= 5) {
+        pubBtn.style.display = "none";
       }
+    }
+
+    // Initialize all abstracts as hidden
+    document.querySelectorAll(".abstract-content").forEach(el => {
+      el.style.display = "none";
     });
   });
 </script>
- 
+
+
 </body>
 </html>
